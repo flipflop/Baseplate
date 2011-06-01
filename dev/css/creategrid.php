@@ -11,7 +11,7 @@
 * http://en.wikipedia.org/wiki/GNU_General_Public_License
 */
 
-$file = file_get_contents("../less/chassis.grid.constants.less");
+$file = file_get_contents("../less/baseplate.grid.constants.less");
 $pieces = explode("@", $file);
 
 $baselineStr = explode(":", $pieces[1]);

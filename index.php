@@ -159,6 +159,7 @@
                   	<li><a href="#" id="debug-grid-body">debug-grid-body</a></li>
                   	<li><a href="#" id="debug-layouts">debug-layouts</a></li>
                 </ul>
+                <strong>Note:</strong> for browsers that do not support CSS gradients, a <a href="dev/css/creategrid.php">dynamic debug grid background</a> is available in PHP. 
 		
 			</div><!-- id="content-related" -->
  

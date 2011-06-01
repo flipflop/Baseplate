@@ -145,7 +145,9 @@
                 	<li><code>.marginBottom(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.marginLeft(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.marginLeftGutter(<span>&lt;Number&gt;</span>)</code></li>
-                	<li><code>.marginRightGutter(<span>&lt;Number&gt;</span>)</code></li>
+                	<li><code>.marginRightGutter(<span>&lt;Number&gt;</span>)</code></li>	
+                	<li><code>.paddingLeftGutter(<span>&lt;Number&gt;</span>)</code></li>
+                	<li><code>.paddingRightGutter(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingTop(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingRight(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingBottom(<span>&lt;Number&gt;</span>)</code></li>
@@ -174,10 +176,11 @@
 		</div><!-- id="header" --> 
 		
 		<div id="footer"> 
-		    <h3>Authors</h3> 
+		    <h3>Contributors</h3> 
             <ul>
                 <li>Dan Scotton @danscotton</li>
                 <li>Rozario Chivers @terraflop</li>
+                <li>Anna Huang @nnFlip</li>
                 <li>Andy Beeching @andybeeching</li>
                 <li>Dominic Hoare</li>
 		    </ul>

@@ -7,7 +7,7 @@
 	}
 	
 	.right(@n: 1)	{
-	  right: ((@column + @gutter) * @n) - (@column);
+	  right: ((@column + @gutter) * @n) + @gutter;
 	}
 	
 	.bottom(@n: 1)	{
@@ -15,15 +15,15 @@
 	}
 	
 	.left(@n: 1)	{
-	  left: ((@column + @gutter) * @n) - (@column);
+	  left: ((@column + @gutter) * @n) + @gutter;
 	}
 	
 	.gutterLeft(@n: 1)	{
-	  left: ((@column + @gutter) * @n) - (@column + @gutter);
+	  left: (@column + @gutter) * @n;
 	}
 	
 	.gutterRight(@n: 1)	{
-	  right: ((@column + @gutter) * @n) - (@column + @gutter);
+    right: (@column + @gutter) * @n;
 	}
 	
 /*	------------------------------------------
@@ -43,7 +43,7 @@
 	}
 	
 	.height(@n: 1)	{
-	  height:@n * @baseline;
+	  height: @baseline * @n;
 	}
 
 /*	------------------------------------------
@@ -51,31 +51,39 @@
 	------------------------------------------ */		
 	
 	.marginTop(@n: 1)	{
-	  margin-top: @n * @baseline;
+	  margin-top: @baseline * @n;
 	}
 	
 	.marginRight(@n: 1)	{
-	  margin-right: (((@column + @gutter) * @n) - (@column + @gutter)) + @gutter;
+	  margin-right: ((@column + @gutter) * @n) + @gutter;
 	}
 	
 	.marginBottom(@n: 1)	{
-	  margin-bottom: @n * @baseline;
+	  margin-bottom: @baseline * @n;
 	}
 	
   .marginLeft(@n: 1)	{
-	  margin-left: (((@column + @gutter) * @n) - (@column + @gutter)) + @gutter;
+    margin-left: ((@column + @gutter) * @n) + @gutter;
 	}
 	
 	.marginLeftGutter(@n: 1)	{
-	  margin-left: ((@column + @gutter) * @n) - (@column + @gutter);
+	  margin-left: (@column + @gutter) * @n;
 	}
 	
 	.marginRightGutter(@n: 1)	{
-	   margin-right: ((@column + @gutter) * @n) - (@column + @gutter);
+	   margin-right: (@column + @gutter) * @n;
+	}
+	
+	.paddingLeftGutter(@n: 1)	{
+	  padding-left: (@column + @gutter) * @n - @gutter;
+	}
+	
+	.paddingRightGutter(@n: 1)	{
+	   padding-right: (@column + @gutter) * @n - @gutter;
 	}
 	
 	.paddingTop(@n: 1)	{
-	  padding-top: @n * @baseline;
+	  padding-top: @baseline * @n;
 	}
 	
 	.paddingRight(@n: 1)	{
@@ -83,7 +91,7 @@
 	}
 	
 	.paddingBottom(@n: 1)	{
-	  padding-bottom: @n * @baseline;
+	  padding-bottom: @baseline * @n;
 	}
 	
 	.paddingLeft(@n: 1)	{

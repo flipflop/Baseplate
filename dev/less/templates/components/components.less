@@ -56,14 +56,19 @@
 }
 
 #header blockquote {
-  width: (((@column+@gutter)*6)+@gutter) - @gutter*2;
-  .gutterLeft(3); /* gutter position example */
+  width: (((@column+@gutter)*6)+@gutter);
+  .marginLeftGutter(2); /* gutter position example */
   .height(3);
-  position: absolute;
+  border: 1px solid;
+  background-color: #333;
+  border-radius: 0px 0px 18px 18px;
+  -moz-border-radius: 0px 0px 18px 18px;
+  -webkit-border-bottom-right-radius: 18px;
+  -webkit-border-bottom-left-radius: 18px;
 }
 
 #header blockquote p {
-  .marginTop(1);
+  .paddingTop(1);
 }
 
 /* end header */
@@ -75,8 +80,9 @@
 #footer {
   .marginTop(1);
   clear: both;
-  .marginLeft(3); /* gutter margin example */
+  .marginLeft(2); /* gutter margin example */
   .marginRight(2);
+  .paddingBottom(1);
 }
 
 #content-related h3 {

@@ -14,19 +14,28 @@
 
 var bodyTag =  document.getElementsByTagName('body'),
        styleTags = document.getElementsByTagName('style'),
+       isUsingLess = false,
        lessLinksHTML = "",
-       fragmentHTML = "";
+       fragmentHTML = "",
+       overlayTitle = "For compiled CSS : right click on each link and Save As",
+       errorMessage = "No Less Styles found, you may be using Less PHP?";
 // locate Less (via id) style tags
 for (var i=0; styleTag = styleTags[i]; i++) { 
   if (styleTags[i].id.indexOf('less') != -1) {
-       lessLinksHTML += '<li>';
-       lessLinksHTML += '<a href=\"data:text/html;charset=utf-8,'+encodeURIComponent(styleTags[i].innerHTML)+'\">'+ styleTags[i].id.split(':')[1] +'</a>';
-       lessLinksHTML += '</li>';
+      isUsingLess = true;
+      lessLinksHTML += '<li>';
+      lessLinksHTML += '<a href=\"data:text/html;charset=utf-8,'+encodeURIComponent(styleTags[i].innerHTML)+'\">'+ styleTags[i].id.split(':')[1] +'</a>';
+      lessLinksHTML += '</li>';
    }   
 }
+
+if (!isUsingLess) {
+    overlayTitle = errorMessage;
+}
+
 // output links
 fragmentHTML =  '<div class=\"baseplate-saveas\">' +
-               '<h2 style=\"margin-bottom: 18px\">For compiled CSS : right click on each link and Save As</h2>' +
+               '<h2 style=\"margin-bottom: 18px\">'+overlayTitle+'</h2>' +
                '<ul>' +
                lessLinksHTML +
                '</ul>' +

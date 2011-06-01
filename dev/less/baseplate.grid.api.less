@@ -1,0 +1,91 @@
+/*	------------------------------------------
+	LESS FUNCTIONS : Positioning
+	------------------------------------------ */
+
+	.top(@n: 1)	{
+	  top: @n * @baseline;
+	}
+	
+	.right(@n: 1)	{
+	  right: ((@column + @gutter) * @n) - (@column);
+	}
+	
+	.bottom(@n: 1)	{
+	  bottom: @n * @baseline;
+	}
+	
+	.left(@n: 1)	{
+	  left: ((@column + @gutter) * @n) - (@column);
+	}
+	
+	.gutterLeft(@n: 1)	{
+	  left: ((@column + @gutter) * @n) - (@column + @gutter);
+	}
+	
+	.gutterRight(@n: 1)	{
+	  right: ((@column + @gutter) * @n) - (@column + @gutter);
+	}
+	
+/*	------------------------------------------
+	LESS FUNCTIONS : Dimensions
+	------------------------------------------ */
+  	  
+  .pageWidth() {
+    width: @pageWidth;
+  }
+  
+  .pageWidthWithoutSideGutters() {
+    width: @pageWidth - (2 * @gutter);
+  }	
+  
+  .width(@n: 1)	{
+	  width: (@n * @column) + ((@n - 1) * @gutter);
+	}
+	
+	.height(@n: 1)	{
+	  height:@n * @baseline;
+	}
+
+/*	------------------------------------------
+	LESS FUNCTIONS : Margins and Padding
+	------------------------------------------ */		
+	
+	.marginTop(@n: 1)	{
+	  margin-top: @n * @baseline;
+	}
+	
+	.marginRight(@n: 1)	{
+	  margin-right: (((@column + @gutter) * @n) - (@column + @gutter)) + @gutter;
+	}
+	
+	.marginBottom(@n: 1)	{
+	  margin-bottom: @n * @baseline;
+	}
+	
+  .marginLeft(@n: 1)	{
+	  margin-left: (((@column + @gutter) * @n) - (@column + @gutter)) + @gutter;
+	}
+	
+	.marginLeftGutter(@n: 1)	{
+	  margin-left: ((@column + @gutter) * @n) - (@column + @gutter);
+	}
+	
+	.marginRightGutter(@n: 1)	{
+	   margin-right: ((@column + @gutter) * @n) - (@column + @gutter);
+	}
+	
+	.paddingTop(@n: 1)	{
+	  padding-top: @n * @baseline;
+	}
+	
+	.paddingRight(@n: 1)	{
+	  padding-right: ((@column + @gutter) * @n);
+	}
+	
+	.paddingBottom(@n: 1)	{
+	  padding-bottom: @n * @baseline;
+	}
+	
+	.paddingLeft(@n: 1)	{
+	  padding-left: ((@column + @gutter) * @n);
+	}

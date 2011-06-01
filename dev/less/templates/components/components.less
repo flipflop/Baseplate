@@ -1,0 +1,95 @@
+@import "../../baseplate.grid.api.less";
+@import "../../baseplate.grid.constants.less";
+
+/* Component: skip links */
+#skiplinks { 
+	position: absolute;
+	top: 0;
+	z-index: 5;
+}
+
+#skiplinks ul li { 
+	font-size: 108%;
+	list-style: none;
+}
+
+#skiplinks ul li a { 
+	position: absolute;
+	left: -1000em;
+	z-index: 48; /* don't use z-index above 50 : reserved for assitive technology */
+	white-space: nowrap;
+	color: #333;
+	opacity: .85;
+	filter:alpha(opacity=85);
+	line-height: 14px;
+	padding: 3px;
+	border-bottom: 1px solid #333;
+	border-right: 1px solid #333;
+}
+
+#skiplinks ul li a:focus,
+#skiplinks ul li a:active {
+	top: 0;
+	left: 0;
+	background-color: #eee;
+}
+
+/* end Component: skip links */
+
+/*******************************************************
+ * Header
+ *******************************************************/
+
+#header {
+  position: absolute; /* can only do this if header does not change in height */
+  /* note: page is coded content first - padding is set in layouts.less */
+  .height(4); 
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#header h1 {
+  .marginTop(1);
+  position: relative;
+  .left(3);
+}
+
+#header blockquote {
+  width: (((@column+@gutter)*6)+@gutter) - @gutter*2;
+  .gutterLeft(3); /* gutter position example */
+  .height(3);
+  position: absolute;
+}
+
+#header blockquote p {
+  .marginTop(1);
+}
+
+/* end header */
+
+/*******************************************************
+ * Footer
+ *******************************************************/
+
+#footer {
+  .marginTop(1);
+  clear: both;
+  .marginLeft(3); /* gutter margin example */
+  .marginRight(2);
+}
+
+#content-related h3 {
+  .marginBottom(1);
+}
+
+#content-related ul {
+  .marginBottom(1);
+}
+
+#content-related li,
+#footer li {
+  margin-bottom: 0;
+}
+
+/* end footer */

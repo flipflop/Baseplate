@@ -151,6 +151,14 @@
                 	<li><code>.paddingBottom(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingLeft(<span>&lt;Number&gt;</span>)</code></li>		    
     			</ul>
+    			
+				<h2>Tooling (classes added to Body tag)</h2>
+    			<ul class="tooling">
+    			    <li><a href="#" id="debug">debug</a></li>
+                  	<li><a href="#" id="debug-grid">debug-grid</a></li>
+                  	<li><a href="#" id="debug-grid-body">debug-grid-body</a></li>
+                  	<li><a href="#" id="debug-layouts">debug-layouts</a></li>
+                </ul>
 		
 			</div><!-- id="content-related" -->
  
@@ -180,5 +188,6 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="js/lib/jquery-min.js">\x3C/script>')</script>
+<script src="dev/js/tooling.js"></script>
 </body> 
 </html>

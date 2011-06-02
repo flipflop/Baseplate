@@ -5,7 +5,7 @@
 <!--[if (IE 8)&!(IEMobile) ]> <html class="no-js ie8" lang="en"> <![endif]--> 
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="en"> <!--<![endif]--> 
 <head> 
-	<title>Baseplate 0.5</title> 
+	<title>Baseplate</title> 
 	
 	<meta charset="utf-8" /> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />  
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="dev/css/debug.css" /> 
 
     <!-- Less CSS: for development only, should not be used on production --> 
-    <!--  
+    <!--  --> 
     <link rel="stylesheet/less" type="text/css" href="dev/less/templates/layouts/layouts.less" />
     <link rel="stylesheet/less" type="text/css" href="dev/less/templates/components/components.less" />
     <link rel="stylesheet/less" type="text/css" href="dev/less/templates/pages/pages.less" />
@@ -24,32 +24,12 @@
      
     <script src="dev/less/less.js"></script>
     <script> less.env = "development"; less.watch(); </script>
-    --> 
-    
-    <!-- Compiled Less CSS 
-    <link rel="stylesheet" type="text/css" href="css/layouts.css" /> 
-    <link rel="stylesheet" type="text/css" href="css/components.css" />
-    link rel="stylesheet" type="text/css" href="css/pages.css" />
-    -->  
-    
-    <?php
-		/* Less PHP docs : http://leafo.net/lessphp/ */
-		require 'dev/less/lessc.inc.php';
-		$less1 = new lessc('dev/less/templates/layouts/layouts.less');
-		file_put_contents('css/templates/layouts/layouts.css', $less1->parse());
-		
-		$less2 = new lessc('dev/less/templates/components/components.less');
-		file_put_contents('css/templates/components/components.css', $less2->parse());
-		
-		$less3 = new lessc('dev/less/templates/pages/pages.less');
-		file_put_contents('css/templates/pages/pages.css', $less3->parse());
-	?>
-	
-	<!-- Compiled Less CSS -->
+   
+  	<!-- Compiled Less CSS 
 	<link rel="stylesheet" type="text/css" href="css/templates/layouts/layouts.css" /> 
 	<link rel="stylesheet" type="text/css" href="css/templates/components/components.css" />
     <link rel="stylesheet" type="text/css" href="css/templates/pages/pages.css" />
-    
+    -->
 </head> 
  
 <body> 
@@ -132,8 +112,8 @@
     			
     			<h3>Dimensions</h3>
     			<ul class="theapi">
-                    <li><code>.pageWidth()</code></li>
-                    <li><code>.pageWidthWithoutSideGutters()</code></li>
+                    <li><code>.contentWidth()</code></li>
+                    <li><code>.contentWidthWithoutSideGutters()</code></li>
                     <li><code>.width(<span>&lt;Number&gt;</span>)</code></li>
                   	<li><code>.height<span>(&lt;Number&gt;</span>)</code></li>		    
     			</ul>
@@ -145,7 +125,7 @@
                 	<li><code>.marginBottom(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.marginLeft(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.marginLeftGutter(<span>&lt;Number&gt;</span>)</code></li>
-                	<li><code>.marginRightGutter(<span>&lt;Number&gt;</span>)</code></li>	
+                	<li><code>.marginRightGutter(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingLeftGutter(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingRightGutter(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingTop(<span>&lt;Number&gt;</span>)</code></li>
@@ -154,15 +134,15 @@
                 	<li><code>.paddingLeft(<span>&lt;Number&gt;</span>)</code></li>		    
     			</ul>
     			
-				<h2>Debug (classes added to Body tag)</h2>
+    			<h2>Debug (classes added to Body tag)</h2>
     			<ul class="tooling">
     			    <li><a href="#" id="debug">debug</a></li>
                   	<li><a href="#" id="debug-grid">debug-grid</a></li>
                   	<li><a href="#" id="debug-grid-body">debug-grid-body</a></li>
                   	<li><a href="#" id="debug-layouts">debug-layouts</a></li>
                 </ul>
-                <strong>Note:</strong> for browsers that do not support CSS gradients, a <a href="dev/css/creategrid.php">dynamic debug grid background</a> is available in PHP. 
-		
+                <strong>Note:</strong> for browsers that do not support CSS gradients, a <a href="dev/css/creategrid.php">dynamic debug grid background</a> is available in PHP.  	
+    	
 			</div><!-- id="content-related" -->
  
 		</div><!-- id="main" --> 

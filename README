@@ -1,7 +1,3 @@
-Awaiting approval from:
+A Baseline Grid Framework for Less.js and Less PHP
 
-Dan Scotton @danscotton
-Andy Beeching @andybeeching
-Dominic Hoare
-
-before widely sharing this repo
+Uses traditional CSS properties for positioning, margins and padding according to a Baseline and Column coordinate system.  Caters for positioned and floated elements.

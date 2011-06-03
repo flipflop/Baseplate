@@ -191,6 +191,6 @@
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
 <script>window.jQuery || document.write('<script src="js/lib/jquery-min.js">\x3C/script>')</script>
-<script src="dev/js/debug.js"></script>
+<script src="dev/js/baseplate.events.js"></script>
 </body> 
 </html>

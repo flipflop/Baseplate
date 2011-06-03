@@ -56,7 +56,6 @@ p {
   color:#666666;
 }
 ul li {
-  margin-left:20px;
   font-family:'Calluna';
   font-size:123.1%;
   color:#333333;
@@ -93,7 +92,10 @@ input:focus {
   background:url("h_defaultimage.gif") 0 0 no-repeat;
 }
 .pg-baseplate-home p { margin-bottom:18px; }
-.pg-baseplate-home li { margin-bottom:18px; }
+.pg-baseplate-home li {
+  margin-left:20px;
+  margin-bottom:18px;
+}
 .pg-baseplate-home h1, .pg-baseplate-home h2 { margin-bottom:18px; }
 .pg-baseplate-home .logo { width:180px; }
 .pg-baseplate-home .theapi {

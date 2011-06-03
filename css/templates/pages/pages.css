@@ -94,16 +94,16 @@ li { margin-bottom:18px; }
   width:100px;
   background:url("h_defaultimage.gif") 0 0 no-repeat;
 }
-.pg-home h1, .pg-home h2 { margin-bottom:18px; }
-.pg-home .logo { width:180px; }
-.pg-home .theapi {
+.pg-baseplate-home h1, .pg-baseplate-home h2 { margin-bottom:18px; }
+.pg-baseplate-home .logo { width:180px; }
+.pg-baseplate-home .theapi {
   list-style-type:none;
   padding-left:42.5px;
 }
-.pg-home .theapi li { margin-left:0; }
-#header blockquote { text-align:center; }
-#header blockquote p {
+.pg-baseplate-home .theapi li { margin-left:0; }
+.pg-baseplate-home #header blockquote { text-align:center; }
+.pg-baseplate-home #header blockquote p {
   color:#eeeeee;
   font-size:153.9%;
 }
-.pg-home code span { color:#993333; }
+.pg-baseplate-home code span { color:#993333; }

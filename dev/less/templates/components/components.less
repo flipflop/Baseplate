@@ -38,10 +38,10 @@
 /* end Component: skip links */
 
 /*******************************************************
- * Header
+ * Header .pg-baseplate-home
  *******************************************************/
 
-#header {
+.pg-baseplate-home #header {
   position: absolute; /* can only do this if header does not change in height */
   /* note: page is coded content first - padding is set in layouts.less */
   .height(4); 
@@ -50,13 +50,13 @@
   left: 0;
 }
 
-#header h1 {
+.pg-baseplate-home #header h1 {
   .marginTop(1);
   position: relative;
   .left(3);
 }
 
-#header blockquote {
+.pg-baseplate-home #header blockquote {
   width: (((@column+@gutter)*6)+@gutter);
   .marginLeftGutter(2); /* gutter position example */
   .height(3);
@@ -68,17 +68,17 @@
   -webkit-border-bottom-left-radius: 18px;
 }
 
-#header blockquote p {
+.pg-baseplate-home #header blockquote p {
   .paddingTop(1);
 }
 
-/* end header */
+/* end header .pg-baseplate-home */
 
 /*******************************************************
- * Footer
+ * Footer .pg-baseplate-home
  *******************************************************/
 
-#footer {
+.pg-baseplate-home #footer {
   .marginTop(1);
   .paddingBottom(2);
   clear: both;
@@ -92,32 +92,32 @@
   -webkit-border-top-left-radius: 18px;
 }
 
-#footer h3 {
+.pg-baseplate-home #footer h3 {
   color: #999;
 }
 
-#footer h3, 
-#footer ul {
+.pg-baseplate-home #footer h3, 
+.pg-baseplate-home #footer ul {
   position: relative;
   .top(1);
   .left(1.5);
 }
 
-#footer ul li {
+.pg-baseplate-home #footer ul li {
   color: #fff;
 }
 
-/* end footer */
-
-#content-related h3 {
+.pg-baseplate-home #content-related h3 {
   .marginBottom(1);
 }
 
-#content-related ul {
+.pg-baseplate-home #content-related ul {
   .marginBottom(1);
 }
 
-#content-related li,
-#footer li {
+.pg-baseplate-home #content-related li,
+.pg-baseplate-home #footer li {
   margin-bottom: 0;
 }
+
+/* end footer .pg-baseplate-home */

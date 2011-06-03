@@ -54,7 +54,6 @@ p {
   font-family:'Calluna';
   font-size:138.5%;
   color:#666666;
-  margin-bottom:18px;
 }
 ul li {
   margin-left:20px;
@@ -76,7 +75,6 @@ input:focus {
   text-align:left;
 }
 #content-subnav, #content, #content-related { zoom:1; }
-li { margin-bottom:18px; }
 .ie6 .floatfix { display:inline; }
 #container div, #container ul, #container ol { zoom:1; }
 .ir-io {
@@ -94,6 +92,8 @@ li { margin-bottom:18px; }
   width:100px;
   background:url("h_defaultimage.gif") 0 0 no-repeat;
 }
+.pg-baseplate-home p { margin-bottom:18px; }
+.pg-baseplate-home li { margin-bottom:18px; }
 .pg-baseplate-home h1, .pg-baseplate-home h2 { margin-bottom:18px; }
 .pg-baseplate-home .logo { width:180px; }
 .pg-baseplate-home .theapi {

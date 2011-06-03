@@ -26,12 +26,6 @@
     <script> less.env = "development"; less.watch(); </script>
     --> 
     
-    <!-- Compiled Less CSS 
-    <link rel="stylesheet" type="text/css" href="css/layouts.css" /> 
-    <link rel="stylesheet" type="text/css" href="css/components.css" />
-    link rel="stylesheet" type="text/css" href="css/pages.css" />
-    -->  
-    
     <?php
 		/* Less PHP docs : http://leafo.net/lessphp/ */
 		require 'dev/less/lessc.inc.php';

@@ -120,7 +120,9 @@
                 	<li><code>.bottom(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.left(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.gutterLeft(<span>&lt;Number&gt;</span>)</code></li>
-                	<li><code>.gutterRight(<span>&lt;Number&gt;</span>)</code></li>		    
+                	<li><code>.gutterRight(<span>&lt;Number&gt;</span>)</code></li>	
+                	<li><code>.firstGutterLeft()</code></li>	
+            		<li><code>.lastGutterRight()</code></li>	    
     			</ul>
     			
     			<h3>Dimensions</h3>
@@ -138,24 +140,28 @@
                 	<li><code>.marginBottom(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.marginLeft(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.marginLeftGutter(<span>&lt;Number&gt;</span>)</code></li>
-                	<li><code>.marginRightGutter(<span>&lt;Number&gt;</span>)</code></li>	
+                	<li><code>.marginRightGutter(<span>&lt;Number&gt;</span>)</code></li>
+            		<li><code>.firstGutterLeftMargin()</code></li>	
+            		<li><code>.lastGutterRightMargin()</code></li>
                 	<li><code>.paddingLeftGutter(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingRightGutter(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingTop(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingRight(<span>&lt;Number&gt;</span>)</code></li>
                 	<li><code>.paddingBottom(<span>&lt;Number&gt;</span>)</code></li>
-                	<li><code>.paddingLeft(<span>&lt;Number&gt;</span>)</code></li>		    
+                	<li><code>.paddingLeft(<span>&lt;Number&gt;</span>)</code></li>	
+                	<li><code>.firstGutterLeftPadding()</code></li>	
+            		<li><code>.lastGutterRightPadding()</code></li>		    
     			</ul>
     			
-				<h2>Debug (classes added to Body tag)</h2>
+    			<h2>Debug (classes added to Body tag)</h2>
     			<ul class="tooling">
     			    <li><a href="#" id="debug">debug</a></li>
                   	<li><a href="#" id="debug-grid">debug-grid</a></li>
                   	<li><a href="#" id="debug-grid-body">debug-grid-body</a></li>
                   	<li><a href="#" id="debug-layouts">debug-layouts</a></li>
                 </ul>
-                <strong>Note:</strong> for browsers that do not support CSS gradients, a <a href="dev/css/creategrid.php">dynamic debug grid background</a> is available in PHP. 
-		
+                <strong>Note:</strong> for browsers that do not support CSS gradients, a <a href="dev/css/creategrid.php">dynamic debug grid background</a> is available in PHP.  	
+    	
 			</div><!-- id="content-related" -->
  
 		</div><!-- id="main" --> 

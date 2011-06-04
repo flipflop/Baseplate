@@ -26,6 +26,14 @@
     right: (@column + @gutter) * @n;
 	}
 	
+	.firstGutterLeft() {
+	  left: @gutter;
+	}
+	
+	.lastGutterRight() {
+	  right: @gutter;
+	}
+	
 /*	------------------------------------------
 	LESS FUNCTIONS : Dimensions
 	------------------------------------------ */
@@ -74,6 +82,14 @@
 	   margin-right: (@column + @gutter) * @n;
 	}
 	
+	.firstGutterLeftMargin() {
+	  margin-left: @gutter;
+	}
+	
+	.lastGutterRightMargin() {
+	  margin-right: @gutter;
+	}
+	
 	.paddingLeftGutter(@n: 0)	{
 	  padding-left: (@column + @gutter) * @n - @gutter;
 	}
@@ -96,4 +112,12 @@
 	
 	.paddingLeft(@n: 0)	{
 	  padding-left: ((@column + @gutter) * @n);
+	}
+	
+	.firstGutterLeftPadding() {
+	  padding-left: @gutter;
+	}
+	
+	.lastGutterRightPadding() {
+	  padding-right: @gutter;
 	}

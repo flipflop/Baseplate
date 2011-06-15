@@ -4,6 +4,8 @@
 .left { left:10px; }
 .gutterLeft { left:0px; }
 .gutterRight { right:0px; }
+.firstGutterLeft { left:10px; }
+.lastGutterRight { right:10px; }
 .contentWidth { width:960px; }
 .contentWidthWithoutSideGutters { width:940px; }
 .width { width:-10px; }
@@ -14,28 +16,32 @@
 .marginLeft { margin-left:10px; }
 .marginLeftGutter { margin-left:0px; }
 .marginRightGutter { margin-right:0px; }
+.firstGutterLeftMargin { margin-left:10px; }
+.lastGutterRightMargin { margin-right:10px; }
 .paddingLeftGutter { padding-left:-10px; }
 .paddingRightGutter { padding-right:-10px; }
 .paddingTop { padding-top:0px; }
 .paddingRight { padding-right:0px; }
 .paddingBottom { padding-bottom:0px; }
 .paddingLeft { padding-left:0px; }
+.firstGutterLeftPadding { padding-left:10px; }
+.lastGutterRightPadding { padding-right:10px; }
 .debug-grid-body {
   background-image:-webkit-linear-gradient(rgba(0,0,0,0.4) 1px,transparent 1px), -webkit-linear-gradient(0,rgba(0,0,255,0.4) 1px,transparent 1px), -webkit-linear-gradient(rgba(0,0,0,0.3) 1px,transparent 1px), -webkit-linear-gradient(0,rgba(0,0,255,0.3) 1px,transparent 1px);
-  background-size:90px 90px, 90px 90px, 18px 18px, 18px 18px;
-  -moz-background-size:90px 90px, 90px 90px, 18px 18px, 18px 18px;
+  background-size:120px 120px, 120px 120px, 24px 24px, 24px 24px;
+  -moz-background-size:120px 120px, 120px 120px, 24px 24px, 24px 24px;
 }
 .debug-grid #container {
   background-image:-moz-linear-gradient(rgba(0,0,0,0.3) 1px,transparent 1px), -moz-linear-gradient(0,rgba(0,0,0,0.1) 10px,transparent 1px);
   background-image:-webkit-linear-gradient(rgba(0,0,0,0.3) 1px,transparent 1px), -webkit-linear-gradient(0,rgba(0,0,0,0.1) 10px,transparent 1px);
   background-image:-o-linear-gradient(rgba(0,0,0,0.3) 1px,transparent 1px), -o-linear-gradient(0,rgba(0,0,0,0.1) 10px,transparent 1px);
-  background-size:18px 18px, 95px 85px;
-  -moz-background-size:18px 18px, 95px 85px;
+  background-size:24px 24px, 95px 85px;
+  -moz-background-size:24px 24px, 95px 85px;
 }
-body { line-height:18px; }
+body { line-height:24px; }
 #container {
   width:960px;
-  padding-top:72px;
+  padding-top:96px;
 }
 .layout-2-column  #content, .layout-2-column  .col-1 {
   float:left;
